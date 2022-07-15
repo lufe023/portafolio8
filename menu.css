@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+    /*variables de colores */
+    ---color-crema:#FEF2F2;
+    ---color-naranja: #F26440;
+    ---color-verde:#286F6C;
+    ---color-gris:#ADADAD;
+    ---color-blanco:#FFFFFF;
+    ---color-verde-claro:#d4e2e2;
+
+/* variables tipograficas */
+---semi-bold:600;
+---fuente:'Inter', sans-serif;
+}
+html{
+scroll-behavior: smooth;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
+
+
+
+/* menu */
+#menu{
+    display: none;
+
+}
+nav{
+    background-color: var(---color-crema);
+    display: block;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    height: 70px;
+    z-index: 500;
+    
+}
+.Mprincipal{
+
+    margin-right: 50px;
+}
+.Mprincipal li{
+    margin: 20px 20px;
+    display: inline-block;
+}
+.sandwich{display: none;}
+nav ul li a:hover{
+    color: var(---color-verde);
+    border-bottom: var(---color-naranja) solid 1px;
+}
+nav ul li a:active{
+    color: var(---color-verde);
+    border-bottom: var(---color-naranja) solid 4px;
+}
+
+@media only screen and (max-width: 970px) {
+
+    .sandwich{
+
+        display: block;
+        right: 20px;
+        position: fixed;
+        z-index: 300;
+    }
+    .Mprincipal{
+ 
+        margin-right:0px;
+    }
+    .Mprincipal li{
+        
+        display: block;
+    }
+nav .contenenedor .Mprincipal{
+    top: 0;
+    z-index: 200;
+    right: -100%;
+    position: fixed;
+    background-color:rgb(255, 255, 255,1);
+    transition: right 0.5s;
+    height: 100%;
+    
+}
+
+#menu:checked~ .Mprincipal{
+    right: 0%;
+
+}
+
+.sandwich{
+    width: 35px;
+    height: 35px;
+    color:var(---color-verde);
+    cursor: pointer;
+}
+nav div{
+    padding: 15px 30px;
+    text-align: right;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    padding: 15px;
+    margin: 15px 0px;
+}
+
+
+}
+/* fin del menu*/
+
+
+

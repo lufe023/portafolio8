@@ -1,0 +1,61 @@
+
+.habilidades{
+    height: 500px;
+}
+@media only screen and (max-width: 1329px) {
+    
+.habilidades{
+
+    height: 850px;
+}
+
+.card {
+    width: 40%;
+}
+}
+@media only screen and (max-width: 1560px) {
+    .habilidades{
+    
+        height: 800px;
+    }
+
+}
+@media only screen and (max-width: 970px) {
+
+    .container{
+        width:90%
+    }
+    .card {
+        width: 60%;
+    }
+
+    .habilidades{
+    
+        height: 1200px;
+    }
+    .portafolio{
+        height: auto;
+    }
+    .cardImagenPortafolio{
+        display:block;
+    }
+    .portafolio_article{
+        position: relative;
+        display:block;
+        width: 100%;
+    }
+    .cardImagenPortafolio2{
+        display:block;
+        margin-top: 30px;
+        position: relative;
+        bottom:0; 
+        left: 0;
+
+    }
+    }
+    @media only screen and (max-width: 800px) {
+     .card{
+        left: 0px;
+        width: 100%;
+     }
+    }
